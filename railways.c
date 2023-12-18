@@ -138,12 +138,12 @@ int main(){
     }
     printf("\nDo you want to cancel a ticket?(y/n): ");
     char ch2;
-    scanf(" %c",&ch2);
+    scanf(" %c",ch2);
     while(ch2=='y'){
         CancelTicket(ticketArray,trainArray,n,&size);
         WriteToDatabase(trainArray,n);
         printf("\nDo you want to cancel a ticket?(y/n):");
-        scanf(" %c",&ch2);
+        scanf(" %c",ch2);
     }
     return 0;
 }
