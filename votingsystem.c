@@ -92,7 +92,7 @@ void ShowWinner(struct Candidate* CandidateArray,int count){
 
 int main()
 {   
-    int n,size=0;
+    int n,size=0;//size is the length of the VoterArray , its size increments when user inputs additional structures inside the array.
     printf("Enter the number of Voters in the locality: ");
     scanf("%d",&n);
     struct Voter* VoterArray=(struct Voter*)calloc(n,sizeof(struct Voter));
